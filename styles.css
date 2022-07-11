@@ -41,10 +41,13 @@ nav {
 	padding-right: 30px;
 }
 
-div .side-bar {
-	display:flex;
-	content-justify: right;
+.side-bar {
+	display: flex;
 	flex-direction: column;
+}
+
+.side-bar div {
+	position: fixed;
 }
 
 header {
