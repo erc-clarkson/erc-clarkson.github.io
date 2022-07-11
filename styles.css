@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	font-family:sans-serif;
-	letter-spacing:0.5px;
+	letter-spacing:1px;
 }
 
 .justify-content {
@@ -17,8 +17,13 @@ body {
 }
 
 a {
-    text-decoration: none;	
+    text-decoration: none;
+	color: black;
 }
+
+a:hover {
+	color: blue;
+} 
 
 .page-nav a {
 	margin-left: 50px;	
@@ -29,12 +34,17 @@ nav section {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: nowrap;
-	
 }
 
 nav {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div .side-bar {
+	display:flex;
+	content-justify: right;
+	flex-direction: column;
 }
 
 header {
@@ -47,12 +57,23 @@ header {
 }
 
 .about {
-	height: 300px;
+	height: 350px;
 	background-color: #ed4c53;
 	display: flex;
 	justify-content: center;
-	text-align: center;
+	align-items: center;
 }
+
+.about section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about img {
+	height: 200px;
+}
+
 
 .project-title {
 	display: flex;
@@ -85,19 +106,21 @@ main {
 
 footer {
 	height: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 footer section {
 	padding-top: 50px;
-	padding-left: 10px;
-	padding-right: 10px;
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
 	flex-wrap: nowrap;
-	
 }
 
+footer img {
+	padding-left: 10px;
+}
 
 @media screen and (max-width: 900px) {
 	
