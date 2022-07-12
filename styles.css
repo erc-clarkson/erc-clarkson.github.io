@@ -41,13 +41,17 @@ nav {
 	padding-right: 30px;
 }
 
-.side-bar {
+.side-bar div {
 	display: flex;
 	flex-direction: column;
+	position: fixed;
+	right: 30px;
+	align-items: flex-end;
+	top: 25%;
 }
 
-.side-bar div {
-	position: fixed;
+.side-bar div a {
+	padding-top: 50px;
 }
 
 header {
@@ -149,11 +153,20 @@ footer img {
 	}
 	
 	.justify-content {
-		width: 850px;
+		width: 750px;
 	}
+	
+	
 
 	.projects {
 		width: 850px;
+	}
+	
+	.about section {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		text-align: center;
 	}
 	
 }
