@@ -26,7 +26,7 @@ a:hover {
 } 
 
 .page-nav a {
-	margin-left: 50px;	
+	margin-left: 50px;
 }
 
 nav section {
@@ -52,6 +52,13 @@ nav {
 
 .side-bar div a {
 	padding-top: 50px;
+}
+
+.side-bar a:active {
+  font-weight: bold;
+  border-width: 0 0 2px;
+  border-style: solid;
+
 }
 
 header {
@@ -153,6 +160,74 @@ footer img {
  .scrolling-wrapper img {
 	 height: 300px;
  }
+ 
+ /* sliding banner */
+ 
+ .slide {
+   width: 100vw;
+   height: 50vh;
+ }
+ .wrapper {
+   display: flex;
+   flex-direction: row;
+   width: 300vw;
+ }
+ .one {
+   background: #efdefe;
+   display: flex;
+   justify-content: center;
+   align-items: center;	
+ }
+ 
+ .two {
+   background: #a3f3d3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .two section {
+ 	display: flex;
+}
+ 
+ .two img {
+	 height: 200px;
+	 padding-left: 50px;
+ }
+ .three {
+   background: #0bbaa0;
+ }
+ 
+ .three .projects-intro {
+     text-align: center;
+  }
+ 
+ .three .projects-1 {
+	 display: flex;
+     justify-content: center;
+     align-items: center;
+	 padding-top: 50px;
+ }
+ 
+ .projects-1 section {
+	 margin-left: 30px;
+	 width: 25%;
+ }
+
+ .three img {
+	 height: 250px;
+ }
+ 
+ .outer-wrapper {
+ ...
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+ }
+ ::-webkit-scrollbar {
+   display:none;
+ }
+ 
+ /*end of sliding banner */
 
 @media screen and (max-width: 900px) {
 	
@@ -202,4 +277,56 @@ footer img {
 		float: none;
 	}
 	
+    .slide {
+      width: 100vw;
+      height: 75vh;
+    }
+	
+    .one {
+      justify-content: flex-start;
+      align-items: center;
+	  padding: 0 50px;  
+    }
+	
+	.two section {
+		flex-direction: column-reverse;
+		padding: 0 50px;
+	}
+	  
+	/*projects lined up as three
+  	.projects-1 section {
+  		display: block;
+		width: 100%;
+  	}
+	
+	*/
+	
+    .three {
+	  padding: 0 30px;
+    }
+	
+	.projects-1 img {
+		width: 25%;
+	}
+	
+	.three .projects-1 {
+		display: flex;
+		padding-top: 0;
+		flex-wrap: wrap;
+	}
+	
+	.projects-1 section {
+		display: flex;
+		margin-left: 0;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	
+	.projects-1 div {
+		width: 100%;
+		padding: 50px 100px 0 30px;
+	}
+
+	
+
 }
