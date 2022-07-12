@@ -4,8 +4,17 @@
 
 body {
 	margin: 0;
-	font-family:sans-serif;
-	letter-spacing:1px;
+	font-family: sans-serif;
+	letter-spacing:1.5px;
+}
+
+h3 {
+	text-transform: capitalize;
+}
+
+h2 {
+	text-transform: capitalize;
+	
 }
 
 .justify-content {
@@ -24,6 +33,15 @@ a {
 a:hover {
 	color: blue;
 } 
+
+ 
+a:active {
+  font-weight: bold;
+  line-height: 2;
+  border-width: 0 0 2px;
+  border-style: solid;
+
+}
 
 .page-nav a {
 	margin-left: 50px;
@@ -54,20 +72,22 @@ nav {
 	padding-top: 50px;
 }
 
-.side-bar a:active {
-  font-weight: bold;
-  border-width: 0 0 2px;
-  border-style: solid;
-
-}
-
 header {
-	background-color: #e7eaed;
+	background-color: #ffffff;
 	height: 800px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	text-align: left;
+}
+
+
+.header-text {
+	margin-top: -165px;
+	margin-left: -450px;
+}
+
+.header-img {
+	margin-right: -350px;
 }
 
 
@@ -126,39 +146,41 @@ main {
 }
 
 footer {
-	height: 100px;
-	padding-left: 30px;
-	padding-right: 30px;
+	background-color: #f0f3f4;
 }
 
 footer section {
-	padding-top: 50px;
+	padding: 20px 30px;
 	display: flex;
-	justify-content: space-between;
-	align-content: center;
 	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
 }
 
 footer img {
-	padding-left: 10px;
+	width: 65px;
+	padding-left: 15px;
 }
 
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  padding: 50px 30px;
-  
-  
+  padding: 50px;
   }
 
   .project {
     display: inline-block;
-	padding-right: 30px;
+	padding-right: 50px;
   }
   
  .scrolling-wrapper img {
-	 height: 300px;
+	 width: 500px;
+ }
+ 
+ .learn-more {
+	 padding: 10px 12px;
+	 text-transform: capitalize;
  }
  
  /* sliding banner */
