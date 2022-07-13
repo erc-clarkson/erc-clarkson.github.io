@@ -1,3 +1,5 @@
+#de86ca, #e9a7a5, #f9c97f
+
 * {
 	box-sizing: border-box;
 }
@@ -51,17 +53,19 @@ a {
 	text-transform: capitalize;
 }
 
-a:hover {
+.about-link:hover {
 	color: #d57cbe;
     font-weight: bold;	
-} 
+}
 
-a:active {
-  font-weight: bold;
-  line-height: 2;
-  border-width: 0 0 2px;
-  border-style: solid;
-  color: #f7c271;
+.work-link:hover {
+	color: #e9a7a5;
+    font-weight: bold;	
+}
+
+.contact-link:hover {
+	color: #f9c97f;
+    font-weight: bold;	
 }
 
 .cv {
@@ -70,6 +74,10 @@ a:active {
     border-radius: 0;
     border-style: solid;
     background-color: #ffffff;
+}
+
+.cv:hover {
+    font-weight: bold;	
 }
 
 .page-nav a {
@@ -103,7 +111,7 @@ nav {
 
 header {
 	background-color: #ffffff;
-	height: 550px;
+	height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -116,7 +124,7 @@ header img {
 
 .about {
 	height: 400px;
-	background-color: #e6e8ed;
+	background-color: #f0f3f4;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -173,10 +181,9 @@ button {
 	font-weight: bold;
 }
 
-button:hover {
-	color: #f7c271;
-    font-weight: bold;
-	border-color: #f7c271;	
+.learn-more:hover {
+		color: #d57cbe;
+		border-color: #d57cbe;
 }
 	
 .project-links {
@@ -189,12 +196,20 @@ button:hover {
     background-color: #ffffff;
 }
 
+.project-links:hover {
+	color: #f7c271;
+}
+
 .learn-more {
     padding: 10px 12px;
     border-width: 2px 2px 2px;
     border-radius: 0;
     border-style: solid;
     background-color: #ffffff;
+}
+
+.learn-more:hover {
+	
 }
 
 .project-info p {
@@ -214,7 +229,7 @@ button:hover {
 	display: nowrap;
 	padding: 0 10px;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 
@@ -315,28 +330,34 @@ footer img {
    -ms-overflow-style: none;
  }
  ::-webkit-scrollbar {
-   display:none;
+   display: none;
  }
  
  /* end of sliding banner */
 
 @media screen and (max-width: 1000px) {
 	
+	header {
+		height: 550px;
+	}
 	header img {
 		margin-left: -15px;	
 		width: 800px;
+		margin-top: -100px;
 	}
 	
 	.projects {
 		display:flex;
 		flex-direction: row;;
 	}
+
 	
 	.about section {
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
 		text-align: center;
+		margin-top: -140px;
 	}
 	
 	.about img {
@@ -348,7 +369,7 @@ footer img {
 	}
 	
 	.about {
-		height: 550px;
+		height: 400px;
 	}
 	
 	.projects section {
@@ -375,10 +396,6 @@ footer img {
 	
 	.projects {
 		width: 850px;
-	}
-	
-	.project-links {
-		float: none;
 	}
 	
     .slide {
