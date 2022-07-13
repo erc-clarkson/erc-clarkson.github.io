@@ -135,10 +135,12 @@ header img {
   .project {
     display: inline-block;
 	margin-right: 50px;
+	margin-top: 20px;
   }
   
  .scrolling-wrapper img {
 	 width: 500px;
+	 padding-bottom: 10px;
  }
 
 .project-title {
