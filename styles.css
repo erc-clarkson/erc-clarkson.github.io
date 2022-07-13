@@ -101,7 +101,7 @@ header img {
 	margin-left: 115px;
 }
 
-.about {
+#about {
 	height: 400px;
 	background-color: #f0f3f4;
 	display: flex;
@@ -109,7 +109,7 @@ header img {
 	align-items: center;
 }
 
-.about section {
+#about section {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -120,7 +120,7 @@ header img {
 	padding-left: 70px;
 }
 
-.about img {
+#about img {
 	height: 300px;
 }
 
@@ -233,7 +233,7 @@ footer img {
 		margin-top: -100px;
 	}
 	
-	.about section {
+	#about section {
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
@@ -241,7 +241,7 @@ footer img {
 		margin-top: -140px;
 	}
 	
-	.about img {
+	#about img {
 		height: 250px;
 	}
 	
@@ -249,7 +249,7 @@ footer img {
 		padding-left: 0;
 	}
 	
-	.about {
+	#about {
 		height: 400px;
 	}
 }
