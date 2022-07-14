@@ -8,7 +8,6 @@ body {
 	letter-spacing:1.5px;
 }
 
-
 h1 {
 	font-size: 30px;
 }
@@ -26,6 +25,7 @@ h1 {
 
 .project-title h2 {
 	font-size: 30px;
+	text-transform: capitalize;
 }
 
 .project-title p {
@@ -51,11 +51,11 @@ a {
 
 .about-link:hover {
 	color: #d57cbe;
-    font-weight: bold;	
+	font-weight: bold;	
 }
 
 .work-link:hover {
-	color: #e9a7a5;
+	color: #eaa997;
     font-weight: bold;	
 }
 
