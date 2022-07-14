@@ -28,7 +28,7 @@ h1 {
 	text-transform: capitalize;
 }
 
-.sub-heading {
+ .sub-heading {
 	font-size: 20px;
 	font-weight: normal;
 	line-height: 30px;
@@ -255,5 +255,27 @@ footer img {
 	
 	h1 {
 		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	
+	.cv {
+		display: none;
+	}
+	
+	.justify-content {
+		width: 500px;
+	}
+	
+	header img {
+		margin-left: -55px;	
+		width: 600px;
+	}
+	
+	footer img {
+		width: 30px;
+		margin-left: 10px;
+		margin-top: -20px;
 	}
 }
