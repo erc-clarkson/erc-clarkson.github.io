@@ -1,11 +1,11 @@
-$grey1: #222222;
-$grey2: #817c7c;
-$grey3: #5d5a5a;
+$grey1: #3c3c3b;
+$grey2: #575756;
+$grey3: #817c7c;
 $grey4: #cdcdcd;
 $brandColour1: #de86ca;
 $brandColour2: #f7b194;
 $brandColour3: #f9c97f;
-$backgroundColor: #f0f3f4;
+$backgroundColor: #eeeeee;
 
 * {
     padding: 0;
@@ -16,7 +16,7 @@ $backgroundColor: #f0f3f4;
 
     a {
         text-decoration: none;
-        color: black;
+        color: #000000;
         text-transform: capitalize;
         font-size: 18px;
 
@@ -232,7 +232,7 @@ nav {
     }
     
     p {
-        color: $grey3;
+        color: $grey2;
         font-size: 18px;
         
         @media screen and (max-width: 600px) {
@@ -516,12 +516,8 @@ nav {
             padding: 60px 0;
         }
 
-        // a {
-        //     padding: 0 20px;
-
-        //     @media screen and (max-width: 400px) {
-        //         padding: 10px 20px;
-        //     }
-        // }
+        .credits {
+            color: $grey2;
+        }
     }
 }

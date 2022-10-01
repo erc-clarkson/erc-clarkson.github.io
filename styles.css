@@ -7,7 +7,7 @@
 }
 * a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   text-transform: capitalize;
   font-size: 18px;
 }
@@ -187,7 +187,7 @@ nav .cvButton:hover {
   font-family: Lust Didone;
   font-size: 120px;
   text-transform: capitalize;
-  color: #222222;
+  color: #3c3c3b;
   letter-spacing: 2.5px;
 }
 @media screen and (max-width: 800px) {
@@ -204,7 +204,7 @@ nav .cvButton:hover {
   font-size: 50px;
   padding-bottom: 45px;
   padding-top: 15px;
-  color: #817c7c;
+  color: #575756;
   text-transform: capitalize;
 }
 @media screen and (max-width: 800px) {
@@ -219,7 +219,7 @@ nav .cvButton:hover {
   }
 }
 .introContentContainer p {
-  color: #5d5a5a;
+  color: #575756;
   font-size: 18px;
 }
 @media screen and (max-width: 600px) {
@@ -229,7 +229,7 @@ nav .cvButton:hover {
 }
 
 #about {
-  background-color: #f0f3f4;
+  background-color: #eeeeee;
 }
 #about .aboutContentContainer {
   display: flex;
@@ -370,7 +370,7 @@ nav .cvButton:hover {
   width: 100%;
   height: 300px;
   margin-bottom: 10px;
-  border: 1px solid #222222;
+  border: 1px solid #3c3c3b;
 }
 #portfolio .scrollingWrapper .projectInfo p {
   padding-bottom: 20px;
@@ -422,7 +422,7 @@ nav .cvButton:hover {
 }
 
 #contact {
-  background-color: #f0f3f4;
+  background-color: #eeeeee;
 }
 #contact .funkyBanner {
   padding: 15px 0;
@@ -487,6 +487,9 @@ nav .cvButton:hover {
 }
 #contact .contactContentContainer .contactLinks {
   padding: 60px 0;
+}
+#contact .contactContentContainer .credits {
+  color: #575756;
 }
 
 /*# sourceMappingURL=styles.css.map */
