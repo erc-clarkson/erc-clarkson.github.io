@@ -78,6 +78,16 @@ nav {
   background-color: #ffffff;
   padding: 20px 100px 15px 100px;
 }
+@media screen and (max-width: 700px) {
+  nav {
+    padding: 20px 50px 50px 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 20px 5px 5px 5px;
+  }
+}
 nav .navContainer {
   display: flex;
   align-items: center;
@@ -153,10 +163,19 @@ nav .cvButton:hover {
 .introContentContainer {
   padding: 250px 100px 300px 100px;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 700px) {
   .introContentContainer {
-    padding-top: 15%;
-    padding-bottom: 55%;
+    padding: 150px 40px 200px 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .introContentContainer {
+    padding: 100px 30px 250px 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .introContentContainer {
+    padding: 100px 15px 250px 15px;
   }
 }
 .introContentContainer img {
@@ -225,6 +244,16 @@ nav .cvButton:hover {
   background-color: #eeeeee;
   padding: 100px 100px 100px 100px;
 }
+@media screen and (max-width: 700px) {
+  #about {
+    padding: 100px 40px 100px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #about {
+    padding: 100px 15px 100px 15px;
+  }
+}
 #about .aboutContentContainer {
   display: flex;
   align-items: center;
@@ -239,7 +268,6 @@ nav .cvButton:hover {
 @media screen and (max-width: 400px) {
   #about .aboutContentContainer {
     text-align: start;
-    padding-bottom: 20%;
   }
 }
 #about .aboutContentContainer h3 {
@@ -255,21 +283,18 @@ nav .cvButton:hover {
 }
 @media screen and (max-width: 850px) {
   #about .aboutContentContainer img {
+    margin-bottom: 50px;
     margin-top: -200px;
-    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 600px) {
   #about .aboutContentContainer img {
     margin-top: -120px;
-    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 500px) {
   #about .aboutContentContainer img {
-    width: 70%;
-    margin-top: -100px;
-    padding-bottom: 50px;
+    margin-top: -180px;
   }
 }
 #about .aboutContentContainer .writtenInformation {
@@ -284,9 +309,24 @@ nav .cvButton:hover {
 #portfolio {
   padding: 150px 0px 100px 100px;
 }
+@media screen and (max-width: 700px) {
+  #portfolio {
+    padding: 100px 40px 100px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #portfolio {
+    padding: 100px 15px 100px 15px;
+  }
+}
 #portfolio .portfolioTitle {
   text-align: center;
   padding-bottom: 70px;
+}
+@media screen and (max-width: 600px) {
+  #portfolio .portfolioTitle {
+    padding-bottom: 20px;
+  }
 }
 #portfolio .portfolioTitle h3 {
   padding-bottom: 30px;
