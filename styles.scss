@@ -34,58 +34,67 @@ nav {
             justify-content: center;
             padding: 15px 0;
         }
-    }
 
-    ul {
-        list-style: none; 
-    }
+        a {
+            text-decoration: none;
+            color: black;
+            text-transform: capitalize;
+            font-size: 18px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 14px;
+            }
+        }
+        
+        li {
+            display: inline-block;
+            margin: 0 70px;
+
+            @media screen and (max-width: 750px) {
+                margin: 0 30px;
+            }
     
-    li {
-        display: inline-block;
-
-        @media screen and (max-width: 750px) { 
-            .linkAbout {
-            padding-right:40px; 
+            @media screen and (max-width: 500px) {
+                margin: 0 5px;
             }
 
-            .linkContact {
-            padding-left:40px; 
+            .NavLink  {
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                padding-bottom: 0.40rem; 
+                position: relative;
+                padding-left: 8px;
+                padding-right: 8px;
+
+            }
+
+            .NavLink::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 3px;
+                transition: width 0.25s ease-out;  
+            }
+            .NavLink:hover::before {
+                width: 100%;
+            }
+
+            .linkAbout::before {
+                background-color: $brandColour1;
+            }
+
+            .linkPortfolio::before {
+                background-color: $brandColour2;
+            }
+
+            .linkContact::before {
+                background-color: $brandColour3;
             }
         }
 
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-        text-transform: capitalize;
-        font-size: 18px;
-    }
-
-    .NavLink {
-        display: inline-block;
-        margin: 0 30px;
-        padding: 0 10px;
-
-        @media screen and (max-width: 750px) {
-            font-size: 14px;
-            margin: 0 0;
-        }
-    }
-
-    .activeAbout {
-        border-bottom: 3px solid $brandColour1;
-        padding-bottom: 5px;
-    }
-
-    .activePortfolio {
-        border-bottom: 3px solid $brandColour2;
-        padding-bottom: 5px;
-    }
-
-    .activeContact {
-        border-bottom: 3px solid $brandColour3;
-        padding-bottom: 5px;
     }
 
     .cvButton {

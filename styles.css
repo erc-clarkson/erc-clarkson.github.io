@@ -27,48 +27,60 @@ nav .navContainer {
     padding: 15px 0;
   }
 }
-nav ul {
-  list-style: none;
-}
-nav li {
-  display: inline-block;
-}
-@media screen and (max-width: 750px) {
-  nav li .linkAbout {
-    padding-right: 40px;
-  }
-  nav li .linkContact {
-    padding-left: 40px;
-  }
-}
-nav a {
+nav .navContainer a {
   text-decoration: none;
   color: black;
   text-transform: capitalize;
   font-size: 18px;
 }
-nav .NavLink {
-  display: inline-block;
-  margin: 0 30px;
-  padding: 0 10px;
-}
-@media screen and (max-width: 750px) {
-  nav .NavLink {
+@media screen and (max-width: 500px) {
+  nav .navContainer a {
     font-size: 14px;
-    margin: 0 0;
   }
 }
-nav .activeAbout {
-  border-bottom: 3px solid #de86ca;
-  padding-bottom: 5px;
+nav .navContainer li {
+  display: inline-block;
+  margin: 0 70px;
 }
-nav .activePortfolio {
-  border-bottom: 3px solid #f7b194;
-  padding-bottom: 5px;
+@media screen and (max-width: 750px) {
+  nav .navContainer li {
+    margin: 0 30px;
+  }
 }
-nav .activeContact {
-  border-bottom: 3px solid #f9c97f;
-  padding-bottom: 5px;
+@media screen and (max-width: 500px) {
+  nav .navContainer li {
+    margin: 0 5px;
+  }
+}
+nav .navContainer li .NavLink {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+nav .navContainer li .NavLink::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  transition: width 0.25s ease-out;
+}
+nav .navContainer li .NavLink:hover::before {
+  width: 100%;
+}
+nav .navContainer li .linkAbout::before {
+  background-color: #de86ca;
+}
+nav .navContainer li .linkPortfolio::before {
+  background-color: #f7b194;
+}
+nav .navContainer li .linkContact::before {
+  background-color: #f9c97f;
 }
 nav .cvButton {
   padding: 10px 12px;
