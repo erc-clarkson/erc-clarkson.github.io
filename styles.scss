@@ -86,7 +86,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: #ffffff;
-    padding: 20px 100px 15px 100px;
+    padding: 20px 150px 15px 150px;
 
     @media screen and (max-width: 700px) {
         padding: 20px 50px 50px 15px;
@@ -175,7 +175,7 @@ nav {
 }
 
 .introContentContainer {
-    padding: 250px 100px 300px 100px;
+    padding: 250px 150px 300px 150px;
 
     @media screen and (max-width: 700px) {
         padding: 150px 40px 200px 40px;
@@ -252,7 +252,7 @@ nav {
 
 #about {
     background-color: $backgroundColor;
-    padding: 100px 100px 100px 100px;
+    padding: 100px 150px 100px 150px;
 
     @media screen and (max-width: 700px) {
         padding: 100px 40px 100px 40px;
@@ -315,7 +315,7 @@ nav {
 }
 
 #portfolio {
-    padding: 150px 0px 100px 100px;
+    padding: 150px 0px 100px 150px;
 
     @media screen and (max-width: 700px) {
         padding: 100px 40px 100px 40px;
