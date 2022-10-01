@@ -395,7 +395,7 @@ nav .cvButton:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding-bottom: 25px;
   }
 }
 #portfolio .scrollingWrapper img {
