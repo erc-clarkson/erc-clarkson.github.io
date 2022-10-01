@@ -1,0 +1,106 @@
+$grey1: #222222;
+$grey2: #817c7c;
+$grey3: #5d5a5a;
+$grey4: #cdcdcd;
+$brandColour1: #de86ca;
+$brandColour2: #f7b194;
+$brandColour3: #f9c97f;
+$backgroundColor: #f0f3f4;
+
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:1.5px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    
+    .navContainer {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 750px) {
+            width: 100%;
+            justify-content: center;
+            padding: 15px 0;
+        }
+    }
+
+    ul {
+        list-style: none; 
+    }
+    
+    li {
+        display: inline-block;
+
+        @media screen and (max-width: 750px) { 
+            .linkAbout {
+            padding-right:40px; 
+            }
+
+            .linkContact {
+            padding-left:40px; 
+            }
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+
+    .NavLink {
+        display: inline-block;
+        margin: 0 30px;
+        padding: 0 10px;
+
+        @media screen and (max-width: 750px) {
+            font-size: 14px;
+            margin: 0 0;
+        }
+    }
+
+    .activeAbout {
+        border-bottom: 3px solid $brandColour1;
+        padding-bottom: 5px;
+    }
+
+    .activePortfolio {
+        border-bottom: 3px solid $brandColour2;
+        padding-bottom: 5px;
+    }
+
+    .activeContact {
+        border-bottom: 3px solid $brandColour3;
+        padding-bottom: 5px;
+    }
+
+    .cvButton {
+        padding: 10px 12px;
+		border-width: 2px 2px 2px;
+		border-style: solid;
+		background-color: #ffffff; 
+
+        &:hover {
+            font-weight: 900;	
+            transform: scale(1.05);
+        }  
+
+        @media screen and (max-width: 750px) {
+            display: none;
+        }
+    }
+}
