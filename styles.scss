@@ -13,6 +13,63 @@ $backgroundColor: #f0f3f4;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing:1.5px;
+
+        h3 {
+            font-size: 30px;
+            text-transform: capitalize;
+    
+            @media screen and (max-width: 900px) {
+                font-size: 24px;
+            }
+        }
+    
+        h4 {
+            font-size: 24px;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+            padding-top: 20px;
+    
+            @media screen and (max-width: 900px) {
+                font-size: 18px;
+            }
+        }
+    
+        p {
+            font-size: 16px;
+            line-height: 25px;
+    
+            @media screen and (max-width: 500px) {
+                font-size: 14px;
+                line-height: 23px;
+            }
+         }
+    
+         .SubInfo {
+            // color: $subFontColour1;
+            font-size: 20px;
+            padding-bottom: 25px;
+    
+            @media screen and (max-width: 500px) {
+                font-size: 16px;
+            }
+        }
+    
+        .paddingContainer {
+            padding: 100px;
+    
+            @media screen and (max-width: 800px) {
+                padding: 55px;
+            }
+    
+            @media screen and (max-width: 600px) {
+                padding: 20px;
+            }
+        
+        }
+        
+        section {
+            width: 100%;
+        }
 }
 
 nav {
@@ -112,4 +169,134 @@ nav {
             display: none;
         }
     }
+}
+
+.introContentContainer {
+    padding-top: 5%;
+    padding-bottom: 12%;
+
+    @media screen and (max-width: 850px) {
+        padding-bottom: 55%;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding-bottom: 75%;
+    }
+
+    img {
+        width: 280px;
+        margin-left: -4px;
+        
+        @media screen and (max-width: 800px) {
+            width: 230px;
+            padding-bottom: 5px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            width: 140px;
+            padding-bottom: 10px;
+        }
+    }
+    
+    h1 {
+        font-family:Lust Didone;
+        font-size: 120px;
+        text-transform: capitalize;
+        color: $grey1;
+        letter-spacing: 2.5px;
+        
+        @media screen and (max-width: 800px) {
+            font-size: 70px;
+        }
+        
+        @media screen and (max-width: 500px) {
+            font-size: 48px;
+        }
+    }
+    
+    h2 {
+        font-size: 50px;
+        padding-bottom: 45px;
+        padding-top: 15px;
+        color: $grey2;
+        text-transform: capitalize;
+        
+        @media screen and (max-width: 800px) {
+            font-size: 30px;
+        }
+        
+        @media screen and (max-width: 500px) {
+            font-size: 22px;
+            padding-bottom: 30px;
+        }
+    }
+    
+    p {
+        color: $grey3;
+        font-size: 18px;
+        
+        @media screen and (max-width: 600px) {
+            font-size: 16px;
+        }
+    }
+    
+}
+
+#about {
+    background-color: $backgroundColor;
+
+    .aboutContentContainer {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 850px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 400px) {
+            text-align: start;
+            padding-bottom: 20%;
+        }
+
+        h3 {
+            padding-bottom: 30px;
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+    
+        img {
+            width: 20%;
+
+            @media screen and (max-width: 850px) {
+                width: 40%;
+                margin-top: -200px;
+                padding-bottom: 50px;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 40%;
+                margin-top: -120px;
+                padding-bottom: 50px;
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 70%;
+                margin-top: -100px;
+                padding-bottom: 50px;
+            }
+        }
+
+        .writtenInformation {
+            padding-left: 100px;
+
+            @media screen and (max-width: 850px) {
+                padding-left: 0;
+            }
+        }
+
+    } 
 }
