@@ -5,6 +5,17 @@
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1.5px;
 }
+* a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+@media screen and (max-width: 500px) {
+  * a {
+    font-size: 14px;
+  }
+}
 * h3 {
   font-size: 30px;
   text-transform: capitalize;
@@ -80,17 +91,6 @@ nav .navContainer {
     width: 100%;
     justify-content: center;
     padding: 15px 0;
-  }
-}
-nav .navContainer a {
-  text-decoration: none;
-  color: black;
-  text-transform: capitalize;
-  font-size: 18px;
-}
-@media screen and (max-width: 500px) {
-  nav .navContainer a {
-    font-size: 14px;
   }
 }
 nav .navContainer li {
@@ -285,6 +285,140 @@ nav .cvButton:hover {
   #about .aboutContentContainer .writtenInformation {
     padding-left: 0;
   }
+}
+
+#portfolio {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+  #portfolio {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+#portfolio .portfolioTitle {
+  text-align: center;
+  padding-bottom: 70px;
+}
+#portfolio .portfolioTitle h3 {
+  padding-bottom: 30px;
+}
+#portfolio .portfolioTitle .swipeMessageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  #portfolio .portfolioTitle .swipeMessageContainer {
+    display: none;
+  }
+}
+#portfolio .portfolioTitle .swipeMessageContainer #pointRightEmoji {
+  padding-left: 5px;
+  width: 3%;
+}
+@media screen and (max-width: 700px) {
+  #portfolio .portfolioTitle .swipeMessageContainer #pointRightEmoji {
+    width: 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #portfolio .portfolioTitle .swipeMessageContainer #pointRightEmoji {
+    width: 8%;
+  }
+}
+#portfolio .scrollingWrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0 0 50px 50px;
+}
+@media screen and (max-width: 600px) {
+  #portfolio .scrollingWrapper {
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+#portfolio .scrollingWrapper .project {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 70px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 30%;
+}
+@media screen and (max-width: 1300px) {
+  #portfolio .scrollingWrapper .project {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #portfolio .scrollingWrapper .project {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #portfolio .scrollingWrapper .project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+#portfolio .scrollingWrapper img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  border: 1px solid #222222;
+}
+#portfolio .scrollingWrapper .projectInfo p {
+  padding-bottom: 20px;
+  white-space: normal;
+}
+#portfolio .scrollingWrapper .projectInfo .keyWords {
+  display: flex;
+  border-bottom: 1px solid #cdcdcd;
+}
+#portfolio .scrollingWrapper .projectInfo .keyWords h5 {
+  margin-right: 20px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  background-color: #f9c97f;
+  width: fit-content;
+  padding: 8px 10px;
+  border-radius: 25px;
+}
+#portfolio .scrollingWrapper .projectInfo .projectLinks {
+  float: right;
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: 900;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+#portfolio .scrollingWrapper .projectInfo .projectLinks::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  transition: width 0.25s ease-out;
+}
+#portfolio .scrollingWrapper .projectInfo .projectLinks:hover::before {
+  width: 100%;
+}
+#portfolio .scrollingWrapper .projectInfo .live::before {
+  background-color: #de86ca;
+}
+#portfolio .scrollingWrapper .projectInfo .gitHub::before {
+  background-color: #f9c97f;
 }
 
 /*# sourceMappingURL=styles.css.map */
