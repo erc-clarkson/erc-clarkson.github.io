@@ -6,136 +6,125 @@
 	<link href="styles.css" type="text/css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 </head>
-
-<body> 	
+<body>
 	<nav>
-		<section>
-			<h1> Emily Clarkson</h1>
-			<div class="page-nav">
-				<a class="about-link" href="#about">about</a>
-				<a class="work-link" href="#portfolio">work</a>
-				<a class="contact-link" href="#footer">contact</a>
+        <div class="navContainer">
+                <ul>
+                <li><a class="NavLink linkAbout" href="#about">About</a> </li>
+                 <li><a class="NavLink linkPortfolio" href="#portfolio">Portfolio</a></li> 
+                  <li><a class="NavLink linkContact" href="#contact">Contact</a></li>
+              </ul>
+          <div class="cvButton">
+              <a href="/Emily_Clarkson_CV.pdf">download CV</a>
+            </div>
+        </div>	
+    </nav>
+	<main class="mainContent">
+		<section id="introBanner" class="">
+			<div class="introContentContainer">
+				<img src="helloMessage.png" alt="Welcome banner saying hello message"/>
+				<h1>I'm Emily</h1>
+				<h2>Full-Stack Developer</h2>
+				<p id="aboutIntro">Welcome to my portfolio page. Here you can find out a bit more about me, see my work and get in touch!</p>
 			</div>
-			<div>
-				<a class="cv" href="#">download CV</a>
-			</div>	
 		</section>
-	</nav>
-	
-	<header>
-		<section class="justify-content">
-			<div class="hero-img">
-				<img src="1_0037-new.png" alt="welcome.png"/>
+		<section id="about" class="">
+			<div class="aboutContentContainer">
+				<img src="profilepicture.png" alt="profile Picture"/>
+				<div class="writtenInformation">
+					<h3>Emily Clarkson</h3>
+					<p class="SubInfo">Currently a student at IO Academy, based in London</p>
+					<p>After spending several years working as a designer, I gained experience in digital design and from there I took the leap into software development. My love for creativity gave me the confidence to expand into coding as I have found the same experimental processes and outside-the-box thinking makes the industry an exciting place to be. I have gained skills using HTML, CSS, PHP and JavaScript (to name a few) and I'm looking for opportunities within Full-Stack development. Time to checkout my portfolio! keep scrolling...</p>
+				</div>
 			</div>
 		</section>
-	</header>
-	
-	<div id="about">
-		<section class="justify-content">
-			<div class="about-info">
-				<h1>I'm Emily Clarkson</h1>
-				<h2 class="sub-info">Currently a student at IO Academy, based in London</h2>
-				<p>Information blah blah blah. Information blah blah blah. Information blah blah blah. Information blah blah blah. Information blah blah blah. Information blah blah blah coding this. Information blah blah blah. Information blah blah blah. Information blah blah blah, coding that. </p>
+		<section id="portfolio">
+			<div class="portfolioTitle">
+				<h3>see my latest work</h3>
+				<p class="SubInfo">Get an inside look into my creative process and see a variety of projects</p>
+				<div class="swipeMessageContainer">
+					<p class="swipeMessage">swipe to see work</p>
+					<img id="pointRightEmoji" alt="hand pointing right emoji" src="./Point_right.svg"/>
+				</div>
 			</div>
-			<div>
-				<img src="academy-aboutme-pic.png" alt="Emily profile picture"/>
-			</div>	 
+			<div class="scrollingWrapper">
+				<div class="project">
+					<img src="collectionApp.png" alt="screeshot of collection app interface"/>
+					<div class="projectInfo">
+						<h4>Collection App</h4>
+						<p>Created a database structure using MySQL and visually displays the information on the application using PHP. The collection of information was tied to the theme of vinyl records. Additional features include the ability to add (vinyl) data to the database, incorporating form validation. A shuffle button has been incorporated to display one record (selected at random).</p>
+						<div class="keyWords">
+							<h5>PHP</h5>
+							<h5>MySQL</h5>
+						</div>
+							<a class="projectLinks gitHub" target="_blank" href="https://github.com/erc-clarkson/collection-">github</a> 
+							<a class="projectLinks live" target="_blank" href="https://2022-emilyc.dev.io-academy.uk/Collection%20App/">live</a>
+						</div>
+					</div>
+				<div class="project">
+					<img src="quotlefish.png" alt="screeshot of quiz game interface"/>
+					<div class="projectInfo">
+						<h4>Quotlefish</h4>
+						<p>Developed an interactive JavaScript based quiz game, working as part of an agile team. Features include a timer, score counter and buttons with click event features. Some include a modal button, disabling and enabling buttons and hiding/showing hints.</p>
+						<div class="keyWords">
+							<h5>JavaScript</h5>
+							<h5>MySQL</h5>
+						</div>
+							<a class="projectLinks gitHub" target="_blank" href="https://github.com/iO-Academy/2022-jul-guess-the-film">github</a> 
+							<a class="projectLinks live" target="_blank" href="https://dev.io-academy.uk/projects/2022-july/quotlefish/">live</a>
+						</div>
+					</div>
+					<div class="project">
+						<img src="seamail.png" alt="mac laptop"/>
+						<div class="projectInfo">
+							<h4>Seamail</h4>
+							<p>Using react we composed an API with client data to create an email inbox. Features include selecting emails, displaying a visual sign of read, unread and selected whilst keeping the interface responsive in desktop, ipad and mobile view. This was created within REACT, tools included implimenting bootstrap, SASS and creating a component tree plan.</p>
+							<div class="keyWords">
+								<h5>REACT</h5>
+								<h5>Bootstrap</h5>
+							</div>
+							<a class="projectLinks gitHub" target="_blank" href="https://github.com/iO-Academy/2022-jul-seamail">github</a> 
+							<a class="projectLinks live" target="_blank" href="https://2022-seamail.dev.io-academy.uk/">live</a>
+						</div> 
+					</div>
+					<div class="project">
+						<img src="dunkinBisquids.png" alt="mac laptop"/>
+						<div class="projectInfo">
+							<h4>Dunkin' Bisquids</h4>
+							<p>An object-orientated PHP project, styled with Bootstrap, that fetches and displays information about a variety of the best biscuits from a MySQL database. Upon selecting a biscuit you can view more in-depth facts about your favourite biscuit with a description, an arbitrary dunking time metric and a link to its wikipedia. Interactive features include being able to upvote and downvote the biscuits within online sessions.</p>
+							<div class="keyWords">
+								<h5>OOP</h5>
+								<h5>PHP</h5>
+								<h5>Bootstrap</h5>
+							</div>
+							<a class="projectLinks gitHub" target="_blank" href="https://github.com/iO-Academy/2022-jul-DunkinBisquids">github</a> 
+							<a class="projectLinks live" target="_blank" href="https://dev.io-academy.uk/projects/2022-july/dunkin-bisquids/index.php">live</a>
+						</div> 
+					</div>
 		</section>
-	</div>
-	
-	<div class="project-title">
-		<section class="justify-content">
-			<h2>see my latest work</h2>
-			<p class="sub-heading">Get an inside look into my creative process and see a variety of projects</p>
-			<p>scroll to see work</p>
-		</section>
-	</div>
-	
-	<main id="portfolio">
-		<div class="scrolling-wrapper">
-			<div class="project">
-				<img src="joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg" alt="mac laptop"/>
-				<div class="project-info">
-					<h2>project name</h2>
-					<p>little intro to the project blah blah blah code is so exciting</p>
-					<a class="learn-more" target="_blank">learn more</a>
-					<a class="project-links" target="_blank">github</a> 
-					<a class="project-links" target="_blank">live</a>
-				</div>
-			</div>
-	   
-			<div class="project">
-				<img src="joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg" alt="mac laptop"/>
-				<div class="project-info">
-					<h2>project name</h2>
-					<p>little intro to the project blah blah blah code is so exciting</p>
-					<a class="learn-more" target="_blank">learn more</a>
-				  	<a class="project-links" target="_blank">github</a> 
-				  	<a class="project-links" target="_blank">live</a>
-				</div>
-			</div>
-
-			<div class="project">
-				<img src="joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg" alt="mac laptop"/>
-				<div class="project-info">
-					<h2>project name</h2>
-					<p>little intro to the project blah blah blah code is so exciting</p>
-					<a class="learn-more" target="_blank">learn more</a>
-					<a class="project-links" target="_blank">github</a> 
-					<a class="project-links" target="_blank">live</a>
-				</div>
-			</div>
-	   
-			<div class="project">
-				<img src="joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg" alt="mac laptop"/>
-				<div class="project-info">
-					<h2>project name</h2>
-					<p>little intro to the project blah blah blah code is so exciting</p>
-				  	<a class="learn-more" target="_blank">learn more</a>
-				  	<a class="project-links" target="_blank">github</a> 
-				  	<a class="project-links" target="_blank">live</a>
-				</div>
-			</div>
-	   
-			<div class="project">
-				<img src="joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg" alt="mac laptop"/>
-				<div class="project-info">
-					<h2>project name</h2>
-				  	<p>little intro to the project blah blah blah code is so exciting</p>
-				  	<a class="learn-more" target="_blank">learn more</a>
-				  	<a class="project-links" target="_blank">github</a> 
-				 	<a class="project-links" target="_blank">live</a>
-				</div>
-			</div>
-		</div>
+		<section id="contact">
+            <div>
+                <div class="funkyBanner">
+                    <h3>Get in touch!</h3>
+                    <img id="victoryEmoji" alt="Victory hand emoji" src="./Victory_hand.svg"/>
+                </div>
+                <div class="contactContentContainer">
+                    <div>
+                        <!-- <h3>Get in touch!</h3> -->
+                        <p> Drop an email or message me on social media! I look forward to hearing from you.</p>
+                    </div>
+                    <div class="contactLinks"> 
+                        <a id="emailLink" href="mailto:erc.clarkson@btinternet.com">
+                        <svg alt="email icon to link emails" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg></a>
+                        <a id="linkedInLink" href="https://www.linkedin.com/in/erc-clarkson/" target="_blank">
+                        <svg alt="LinkedIn icon to link social media" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></a>
+                        <a id="githubLink" href="https://github.com/erc-clarkson" target="_blank">
+                        <svg alt="git hub icon to link git hub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                        <a id="cvLink" href="Emily_Clarkson_CV.pdf" target="_blank">
+                        <img alt="CV icon to link cv pdf" src="./CV.svg"></a>
+                    </div>	
+					<p class="credits">Designed & created by Emily Clarkson</p>
+                </div>
+        </section>
 	</main>
-	
-	<div>
-	</div>
-	
-	<div class="funky-banner">
-		<section>
-			<p>let's work together!</p>
-		</section>
-	</div>
-	
-	<footer id="footer">
-		<section>
-			<div>
-				<h2>Get in touch!</h2>
-				<p> Drop an email or message me on social media!</p>
-			</div>
-			<div> 
-				<a href="mailto:erc.clarkson@btinternet.com">
-				<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgLjAyYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02Ljk5IDYuOThsLTYuOTkgNS42NjYtNi45OTEtNS42NjZoMTMuOTgxem0uMDEgMTBoLTE0di04LjUwNWw3IDUuNjczIDctNS42NzJ2OC41MDR6Ii8+PC9zdmc+" alt="mac email icon"/>
-				</a>
-				<a href="https://www.linkedin.com/in/erc-clarkson/" target="_blank">
-				<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgMGgtMTRjLTIuNzYxIDAtNSAyLjIzOS01IDV2MTRjMCAyLjc2MSAyLjIzOSA1IDUgNWgxNGMyLjc2MiAwIDUtMi4yMzkgNS01di0xNGMwLTIuNzYxLTIuMjM4LTUtNS01em0tMTEgMTloLTN2LTExaDN2MTF6bS0xLjUtMTIuMjY4Yy0uOTY2IDAtMS43NS0uNzktMS43NS0xLjc2NHMuNzg0LTEuNzY0IDEuNzUtMS43NjQgMS43NS43OSAxLjc1IDEuNzY0LS43ODMgMS43NjQtMS43NSAxLjc2NHptMTMuNSAxMi4yNjhoLTN2LTUuNjA0YzAtMy4zNjgtNC0zLjExMy00IDB2NS42MDRoLTN2LTExaDN2MS43NjVjMS4zOTYtMi41ODYgNy0yLjc3NyA3IDIuNDc2djYuNzU5eiIvPjwvc3ZnPg==" alt="linkedin icon"/>
-				</a>
-				<a href="https://github.com/erc-clarkson" target="_blank">
-				<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjYgMC0xMiA1LjM3My0xMiAxMiAwIDUuMzAyIDMuNDM4IDkuOCA4LjIwNyAxMS4zODcuNTk5LjExMS43OTMtLjI2MS43OTMtLjU3N3YtMi4yMzRjLTMuMzM4LjcyNi00LjAzMy0xLjQxNi00LjAzMy0xLjQxNi0uNTQ2LTEuMzg3LTEuMzMzLTEuNzU2LTEuMzMzLTEuNzU2LTEuMDg5LS43NDUuMDgzLS43MjkuMDgzLS43MjkgMS4yMDUuMDg0IDEuODM5IDEuMjM3IDEuODM5IDEuMjM3IDEuMDcgMS44MzQgMi44MDcgMS4zMDQgMy40OTIuOTk3LjEwNy0uNzc1LjQxOC0xLjMwNS43NjItMS42MDQtMi42NjUtLjMwNS01LjQ2Ny0xLjMzNC01LjQ2Ny01LjkzMSAwLTEuMzExLjQ2OS0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNS0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yMy45NTctLjI2NiAxLjk4My0uMzk5IDMuMDAzLS40MDQgMS4wMi4wMDUgMi4wNDcuMTM4IDMuMDA2LjQwNCAyLjI5MS0xLjU1MiAzLjI5Ny0xLjIzIDMuMjk3LTEuMjMuNjUzIDEuNjUzLjI0MiAyLjg3NC4xMTggMy4xNzYuNzcuODQgMS4yMzUgMS45MTEgMS4yMzUgMy4yMjEgMCA0LjYwOS0yLjgwNyA1LjYyNC01LjQ3OSA1LjkyMS40My4zNzIuODIzIDEuMTAyLjgyMyAyLjIyMnYzLjI5M2MwIC4zMTkuMTkyLjY5NC44MDEuNTc2IDQuNzY1LTEuNTg5IDguMTk5LTYuMDg2IDguMTk5LTExLjM4NiAwLTYuNjI3LTUuMzczLTEyLTEyLTEyeiIvPjwvc3ZnPg==" alt="github icon"/>	
-				</a>
-			</div>	
-		</section>
-	</footer>
 </body> 
