@@ -159,36 +159,31 @@ nav .cvButton:hover {
 }
 @media screen and (max-width: 850px) {
   .introContentContainer {
+    padding-top: 15%;
     padding-bottom: 55%;
   }
 }
-@media screen and (max-width: 600px) {
-  .introContentContainer {
-    padding-bottom: 75%;
-  }
-}
 .introContentContainer img {
-  width: 280px;
+  width: 240px;
   margin-left: -4px;
 }
 @media screen and (max-width: 800px) {
   .introContentContainer img {
-    width: 230px;
-    padding-bottom: 5px;
+    width: 200px;
   }
 }
 @media screen and (max-width: 600px) {
   .introContentContainer img {
-    width: 140px;
-    padding-bottom: 10px;
+    width: 120px;
   }
 }
 .introContentContainer h1 {
   font-family: Lust Didone;
   font-size: 120px;
   text-transform: capitalize;
-  color: #3c3c3b;
-  letter-spacing: 2.5px;
+  letter-spacing: 3px;
+  margin: 0px;
+  padding-top: 25px;
 }
 @media screen and (max-width: 800px) {
   .introContentContainer h1 {
@@ -197,25 +192,27 @@ nav .cvButton:hover {
 }
 @media screen and (max-width: 500px) {
   .introContentContainer h1 {
-    font-size: 48px;
+    font-size: 46px;
   }
 }
 .introContentContainer h2 {
   font-size: 50px;
-  padding-bottom: 45px;
-  padding-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 25px;
   color: #575756;
   text-transform: capitalize;
 }
 @media screen and (max-width: 800px) {
   .introContentContainer h2 {
+    padding-bottom: 15px;
+    padding-top: 23px;
     font-size: 30px;
   }
 }
 @media screen and (max-width: 500px) {
   .introContentContainer h2 {
-    font-size: 22px;
-    padding-bottom: 30px;
+    font-size: 18px;
+    padding-bottom: 10px;
   }
 }
 .introContentContainer p {
