@@ -46,7 +46,7 @@ $backgroundColor: #eeeeee;
     }
     
     p {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 25px;
     
         @media screen and (max-width: 500px) {
@@ -74,7 +74,6 @@ $backgroundColor: #eeeeee;
         @media screen and (max-width: 600px) {
             padding: 20px;
         }
-        
     }
         
     section {
@@ -87,8 +86,9 @@ nav {
     top: 0;
     background-color: #ffffff;
     padding: 20px 150px 15px 150px;
+    z-index: 1;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 800px) {
         padding: 20px 50px 50px 15px;
     }
 
@@ -101,8 +101,7 @@ nav {
         align-items: center;
         justify-content: space-between;
 
-        @media screen and (max-width: 750px) {
-            width: 100%;
+        @media screen and (max-width: 800px) {
             justify-content: center;
             padding: 15px 0;
         }
@@ -111,12 +110,12 @@ nav {
             display: inline-block;
             margin-right: 100px;
 
-            @media screen and (max-width: 750px) {
-                margin: 0 30px;
+            @media screen and (max-width: 800px) {
+                margin: 0 50px;
             }
     
             @media screen and (max-width: 500px) {
-                margin: 0 5px;
+                margin: 0 15px;
             }
 
             .NavLink  {
@@ -168,7 +167,7 @@ nav {
             transform: scale(1.05);
         }  
 
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 800px) {
             display: none;
         }
     }
@@ -177,16 +176,16 @@ nav {
 .introContentContainer {
     padding: 250px 150px 300px 150px;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 800px) {
         padding: 150px 40px 200px 40px;
     }
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
         padding: 100px 30px 250px 30px;
     }
 
     @media screen and (max-width: 500px) {
-        padding: 100px 15px 250px 15px;
+        padding: 115px 15px 285px 15px;
     }
 
     img {
@@ -216,7 +215,7 @@ nav {
         }
         
         @media screen and (max-width: 500px) {
-            font-size: 46px;
+            font-size: 50px;
         }
     }
     
@@ -259,7 +258,7 @@ nav {
     }
 
     @media screen and (max-width: 400px) {
-        padding: 100px 15px 100px 15px;
+        padding: 100px 15px 70px 15px;
     }
 
     .aboutContentContainer {
@@ -315,22 +314,18 @@ nav {
 }
 
 #portfolio {
-    padding: 150px 0px 100px 150px;
-
-    @media screen and (max-width: 700px) {
-        padding: 100px 40px 100px 40px;
-    }
-
-    @media screen and (max-width: 400px) {
-        padding: 100px 15px 100px 15px;
-    }
 
     .portfolioTitle {
         text-align: center;
         padding-bottom: 70px;
+        padding: 150px 0px 100px 0px;
 
-        @media screen and (max-width: 600px) {
-            padding-bottom: 20px;
+        @media screen and (max-width: 800px) {
+            padding: 100px 40px 50px 40px;
+         }
+
+         @media screen and (max-width: 400px) {
+            padding: 90px 15px 50px 15px;
          }
 
         h3 {
@@ -350,7 +345,7 @@ nav {
                 padding-left: 5px;
                 width: 2.5%;
     
-                @media screen and (max-width: 700px) {
+                @media screen and (max-width: 800px) {
                     width: 5%;
                 }
     
@@ -365,10 +360,16 @@ nav {
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
+        padding: 0px 0px 50px 150px;
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 800px) {
             padding: 0; 
             overflow-x: hidden;
+            padding: 0px 0px 50px 50px;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 0px 15px 20px 15px;
         }
 
         .project {
@@ -387,7 +388,7 @@ nav {
             width:45%;
         }
 
-          @media screen and (max-width: 700px) {
+          @media screen and (max-width: 800px) {
             width:70%;
             margin-right: 100px;
         }
@@ -433,7 +434,6 @@ nav {
                 margin-top: 15px;
                 margin-left: 20px;
                 padding: 10px 12px;
-                background-color: #ffffff;
                 cursor: pointer;
                 font-weight: 900;
                 text-decoration: none;
@@ -507,7 +507,7 @@ nav {
 
             @media screen and (max-width: 400px) {
                 width: 25px;
-                margin: 0 18px;
+                margin: 0 28px;
             }
         }
 
@@ -521,7 +521,7 @@ nav {
 
             @media screen and (max-width: 400px) {
                 width: 25px;
-                margin: 0 18px;
+                margin: 0 28px;
             }
         }
 
