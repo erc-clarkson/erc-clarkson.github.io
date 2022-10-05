@@ -348,6 +348,25 @@ nav .cvButton:hover {
     width: 8%;
   }
 }
+#portfolio .portfolioTitle .scrollMessageContainer {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  #portfolio .portfolioTitle .scrollMessageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#portfolio .portfolioTitle .scrollMessageContainer #pointDownEmoji {
+  padding-left: 5px;
+  width: 2.5%;
+}
+@media screen and (max-width: 800px) {
+  #portfolio .portfolioTitle .scrollMessageContainer #pointDownEmoji {
+    width: 8%;
+  }
+}
 #portfolio .scrollingWrapper {
   overflow-x: scroll;
   overflow-y: hidden;
