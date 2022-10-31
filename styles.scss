@@ -88,7 +88,7 @@ nav {
     padding: 20px 150px 15px 150px;
     z-index: 1;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         padding: 20px 50px 50px 15px;
     }
 
@@ -101,7 +101,7 @@ nav {
         align-items: center;
         justify-content: space-between;
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             justify-content: center;
             padding: 15px 0;
         }
@@ -110,7 +110,7 @@ nav {
             display: inline-block;
             margin-right: 100px;
 
-            @media screen and (max-width: 800px) {
+            @media screen and (max-width: 850px) {
                 margin: 0 50px;
             }
     
@@ -167,7 +167,7 @@ nav {
             transform: scale(1.05);
         }  
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             display: none;
         }
     }
@@ -176,7 +176,7 @@ nav {
 .introContentContainer {
     padding: 250px 150px 300px 150px;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         padding: 150px 40px 200px 40px;
     }
 
@@ -192,7 +192,7 @@ nav {
         width: 240px;
         margin-left: -4px;
         
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             width: 200px;
         }
         
@@ -210,7 +210,7 @@ nav {
         padding-top: 25px;
 
         
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             font-size: 70px;
         }
         
@@ -226,7 +226,7 @@ nav {
         color: $grey2;
         text-transform: capitalize;
         
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             padding-bottom: 15px;
             padding-top: 23px;
             font-size: 30px;
@@ -253,8 +253,8 @@ nav {
     background-color: $backgroundColor;
     padding: 100px 150px 100px 150px;
 
-    @media screen and (max-width: 700px) {
-        padding: 100px 40px 100px 40px;
+    @media screen and (max-width: 850px) {
+        padding: 100px 40px 50px 40px;
     }
 
     @media screen and (max-width: 400px) {
@@ -320,7 +320,7 @@ nav {
         padding-bottom: 70px;
         padding: 150px 0px 100px 0px;
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             padding: 100px 40px 50px 40px;
          }
 
@@ -380,13 +380,12 @@ nav {
         white-space: nowrap;
         padding: 0px 0px 50px 150px;
 
-        @media screen and (max-width: 800px) {
-            padding: 0; 
-            overflow-x: hidden;
-            padding: 0px 0px 50px 50px;
+        @media screen and (max-width: 850px) {
+            padding: 0px 0px 40px 80px;
         }
 
         @media screen and (max-width: 500px) {
+            overflow-x: hidden;
             padding: 0px 15px 20px 15px;
         }
 
@@ -406,7 +405,7 @@ nav {
             width:45%;
         }
 
-          @media screen and (max-width: 800px) {
+          @media screen and (max-width: 850px) {
             width:70%;
             margin-right: 100px;
         }
