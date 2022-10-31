@@ -79,7 +79,7 @@ nav {
   padding: 20px 150px 15px 150px;
   z-index: 1;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   nav {
     padding: 20px 50px 50px 15px;
   }
@@ -94,7 +94,7 @@ nav .navContainer {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   nav .navContainer {
     justify-content: center;
     padding: 15px 0;
@@ -104,7 +104,7 @@ nav .navContainer li {
   display: inline-block;
   margin-right: 100px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   nav .navContainer li {
     margin: 0 50px;
   }
@@ -154,7 +154,7 @@ nav .cvButton:hover {
   font-weight: 900;
   transform: scale(1.05);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   nav .cvButton {
     display: none;
   }
@@ -163,7 +163,7 @@ nav .cvButton:hover {
 .introContentContainer {
   padding: 250px 150px 300px 150px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .introContentContainer {
     padding: 150px 40px 200px 40px;
   }
@@ -182,7 +182,7 @@ nav .cvButton:hover {
   width: 240px;
   margin-left: -4px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .introContentContainer img {
     width: 200px;
   }
@@ -200,7 +200,7 @@ nav .cvButton:hover {
   margin: 0px;
   padding-top: 25px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .introContentContainer h1 {
     font-size: 70px;
   }
@@ -217,7 +217,7 @@ nav .cvButton:hover {
   color: #575756;
   text-transform: capitalize;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .introContentContainer h2 {
     padding-bottom: 15px;
     padding-top: 23px;
@@ -244,9 +244,9 @@ nav .cvButton:hover {
   background-color: #eeeeee;
   padding: 100px 150px 100px 150px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   #about {
-    padding: 100px 40px 100px 40px;
+    padding: 100px 40px 50px 40px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -311,7 +311,7 @@ nav .cvButton:hover {
   padding-bottom: 70px;
   padding: 150px 0px 100px 0px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   #portfolio .portfolioTitle {
     padding: 100px 40px 50px 40px;
   }
@@ -373,15 +373,14 @@ nav .cvButton:hover {
   white-space: nowrap;
   padding: 0px 0px 50px 150px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   #portfolio .scrollingWrapper {
-    padding: 0;
-    overflow-x: hidden;
-    padding: 0px 0px 50px 50px;
+    padding: 0px 0px 40px 80px;
   }
 }
 @media screen and (max-width: 500px) {
   #portfolio .scrollingWrapper {
+    overflow-x: hidden;
     padding: 0px 15px 20px 15px;
   }
 }
@@ -403,7 +402,7 @@ nav .cvButton:hover {
     width: 45%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   #portfolio .scrollingWrapper .project {
     width: 70%;
     margin-right: 100px;
